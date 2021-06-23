@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Runs Pre Deployment Setup
-      uses: actions/defaultJiraPredeploymentsetup@v2
+      uses: ActionSharedLibrary/defaultJiraPredeploymentsetup@v1
       
