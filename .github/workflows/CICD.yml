@@ -13,6 +13,6 @@ jobs:
           ref: main
     - name:  run the workflow
       run: |
-            gh auth login github.com
-            gh workflow run ActionSharedLibrary/test.yml
+           gh auth login github.com
+           gh workflow run ActionSharedLibrary/workflows/defaultBootstrapJiradeployment.yml
       
