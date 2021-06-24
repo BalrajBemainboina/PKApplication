@@ -13,6 +13,6 @@ jobs:
           ref: main
     - name:  run the workflow
       run: |
-            gh auth login
+            gh auth login github.com
             gh workflow run ActionSharedLibrary/action.yml
       
