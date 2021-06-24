@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Runs Pre Deployment Setup
-      uses: BalrajBemainboina/ActionSharedLibrary@main
+      uses: BalrajBemainboina/ActionSharedLibrary/test@main
       
