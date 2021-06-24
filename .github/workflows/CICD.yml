@@ -7,12 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Runs Pre Deployment Setup
-      uses: actions/checkout@v2
-      with:
-          repository: BalrajBemainboina/ActionSharedLibrary
-          ref: main
-    - name:  run the workflow
-      run: |
-           gh auth login github.com
-           gh workflow run ActionSharedLibrary/workflows/defaultBootstrapJiradeployment.yml
+      uses: BalrajBemainboina/ActionSharedLibrary@main
+      
       
