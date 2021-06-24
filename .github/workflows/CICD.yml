@@ -12,5 +12,7 @@ jobs:
           repository: BalrajBemainboina/ActionSharedLibrary
           ref: main
     - name:  run the workflow
-      run: gh workflow run ActionSharedLibrary/action.yml
+      run: |
+            gh auth login
+            gh workflow run ActionSharedLibrary/action.yml
       
