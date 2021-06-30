@@ -9,6 +9,12 @@ jobs:
     - name: Runs Pre Deployment Setup
       uses: BalrajBemainboina/ActionSharedLibrary/jirapredeployment@main
   
+  bootstrapjiradeployment:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Runs js file
+       uses: BalrajBemainboina/ActionSharedLibrary/bootstrapjiradeployment@main
+  
   JiraDeployment:
     runs-on: ubuntu-latest
     needs: [RunJiraPreDeploymentSetup]
